@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="stylesheet" htref="./js/main.js"> -->
+    <link rel="stylesheet" href="./js/content.js">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous">
+    </script>
+
+</head>
+
+<body>
+
+<header>
+        <div style="float:left">
+            <a href="index.html">
+                <h5 class="logo">LOGO</h5>
+            </a>
+        </div>
+        <div class="search" style="float:right">
+            <input type="text" placeholder="장소명" class="search-bar">
+            <img class="search-icon" src="./img/searchIcon.png" >
+        </div> 
+    <div>
+        <h1>WHERE MEET</h1>
+    </div>
+    <div>
+        <h3>성대 고인물의 숨겨진 미팅 맛집</h3>
+    </div>
+    <div class="filterBar">
+        <span>
+                <!-- <span class="filter">인원</span> -->
+                    <select>
+                        <option value="1">인원</option>
+                        <option value="1">1인</option>
+                        <option value="1">2~4인</option>
+                        <option value="1">5인이상</option>
+                        
+                     </select>
+
+<!-- 
+                 <span class="filter">테이블</span> -->
+                 <select>
+                    <option value="1">테이블</option>
+                    <option value="1">원형</option>
+                    <option value="1">사각형</option>
+                    <option value="1">창가석/벽좌석</option>
+                    <option value="1">좌식</option>
+                 </select>
+                 
+                 <!-- <span class="filter">콘센트</span> -->
+                <select>
+                    <option value="1">콘센트</option>
+                 </select>
+                <!-- <span class="filter">미팅룸</span> -->
+                <select>
+                    <option value="1">미팅룸</option>
+                 </select>
+                <!-- <span class="filter">흡연실</span> -->
+                <select>
+                    <option value="1">흡연실</option>
+                 </select>
+            
+        </span>
+        <span>
+            <!-- <button class="btn" id="btn"type="submit" ><img onclick="함수명" src="./img/filter.png" width:100px; style="display:inline-block; vertical-align:middle"></button> -->
+            <img id="filter" src="./img/filter.png" style="display:inline-block; vertical-align:middle">
+            <img id="filterOn" src="./img/filterOn.png"style="display:inline-block; vertical-align:middle">
+        </span>
+           
+    </div>
+      
+        
+    </div>
+   
+</header>
+<hr>
+<main>
+    <div class="main" id="main">
+        <!-- <div class="content">
+            <div>
+                <h3 class="placeName">ttt</h3>
+            </div>
+            <div class="placePhoto">
+                <img class="cafeimg" src="./img/cafe.jpeg" alt="">
+            </div>
+            <div>
+                <h5 class="placeKeyword">#화상회의 #스터디 #팀플 #야간 #디저트</h5>
+            </div>
+            <div>
+                <h5 class="placeTime">영업중</h5>
+            </div>
+            <div>
+               <h6 class="placeDistance">440m</h6> 
+            </div>
+
+        </div> -->
+        
+
+    </div>
+    
+
+</main>
+
+
+
+</body>
+
+<script>
+
+    $(document).ready(function(){
+            $("#filter").show();
+            $("#filterOn").hide();
+ 
+            $("#filter").click(function(){
+                $("#filter").hide();
+                $("#filterOn").show();
+            });
+ 
+            $("#filterOn").click(function(){
+                $("#filter").show();
+                $("#filterOn").hide();
+            });
+        });
+</script>
+<script src="js/content.js"></script>
+ 
+
+
+</html>
