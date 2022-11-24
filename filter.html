@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WHERE MEET</title>
+    <link rel="stylesheet" href="style_filter.css">
+</head>
+
+<body style="margin:0px">
+    <!-- header 코드 추가 예정 -->
+    <header class="top" style="margin:8px">
+        <section>
+            <img src="logo_img.jpg" alt="logo" class="logo-pic">
+            <p class="search">장소명 검색</p>
+        </section>
+        <header style="clear:both;">
+            <h1 class="logo">WHERE MEET</h1>
+            <h5 class="intro">성대 고인물의 숨겨진 미팅 맛집</h5>
+            <button class="filter-button">필터</button>
+        </header>
+        <br>
+    </header>
+    <!--------------------------->
+
+    <div class="bar">
+        <span>
+            <button class="barbutton cancel">취소</button>
+        </span>
+        <span>
+            <button class="barbutton apply">적용</button>
+
+            <button class="barbutton reset" onclick="reset()">
+                <img src="refresh-button.svg" style="vertical-align:bottom;">
+                <div style="display:inline;">초기화</div>
+            </button>
+        </div>
+        </span>
+    </div>
+
+    <div class="filter_contents" style="text-align:center;">
+        <div class="filterSection">
+            <p class="filterName">인원</p>
+            
+            <label class="chooseUserButton">      
+                <input type="checkbox" onclick="changeColor1(this)" name="people" class="hidden"  id="good">
+                <img id="user-01" src="user-01.svg" alt="1" width="32" height="32">
+                <br><span class="filterName each">1인</span>
+            </label>
+            <label class="chooseUserButton">      
+                <input type="checkbox" onclick="changeColor2(this)" name="people" class="hidden">
+                <img id="user-02" src="user-02.svg" alt="234" width="32" height="32">
+                <br><span class="filterName each">2~4인</span>
+            </label>
+            <label class="chooseUserButton">      
+                <input type="checkbox" onclick="changeColor3(this)" name="people" class="hidden">
+                <img id="user-03" src="user-03.svg" alt="5" width="32" height="32">
+                <br><span class="filterName each">5인 이상</span>
+            </label>
+        </div>
+
+        <div class="filterSection">
+            <p class="filterName">테이블 유형</p>
+
+            <label class="chooseTableButton">      
+                <input type="checkbox" onclick="changeColor4(this)" name="seat" class="hidden">
+                <img id="circle" src="circle.svg" alt="1" width="32" height="32">
+                <br><span class="filterName each">원형</span>
+            </label>
+            <label class="chooseTableButton">      
+                <input type="checkbox" onclick="changeColor5(this)" name="seat" class="hidden">
+                <img id="square" src="square.svg" alt="234" width="32" height="32">
+                <br><span class="filterName each">사각형</span>
+            </label>
+            <label class="chooseTableButton">      
+                <input type="checkbox" onclick="changeColor6(this)" name="seat" class="hidden">
+                <img id="left-seat" src="left-seat.svg" alt="5" width="32" height="32">
+                <br><span class="filterName each">창가석/벽좌석</span>
+            </label>
+            <label class="chooseTableButton">      
+                <input type="checkbox" onclick="changeColor7(this)" name="seat" class="hidden">
+                <img id="grid" src="grid.svg" alt="5" width="32" height="32">
+                <br><span class="filterName each">좌식</span>
+            </label>
+        </div>
+
+        <div class="filterSection-last">
+            <p class="filterName">상세 조건</p>
+
+            <label class="chooseOthers1">
+                <span class="filterName each">콘센트</span>
+                <input type="checkbox" name="others" class="checkbox">
+            </label>
+            <label class="chooseOthers1">
+                <span class="filterName each">화상회의</span>
+                <input type="checkbox" name="others" class="checkbox">
+            </label>
+            <p style="margin:15px;">
+            <label class="chooseOthers2">
+                <span class="filterName each">미팅룸</span>
+                <input type="checkbox" name="others" class="checkbox">
+            </label>
+            <label class="chooseOthers2">
+                <span class="filterName each">흡연실</span>
+                <input type="checkbox" name="others" class="checkbox">
+            </label>
+        </div>
+    </div>
+
+    <script src="main_filter.js"></script>
+</body>
+</html>
