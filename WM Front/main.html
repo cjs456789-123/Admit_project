@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WHERE MEET</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/content.css">
+
     <!-- <link rel="stylesheet" htref="./js/main.js"> -->
     <link rel="stylesheet" href="./js/content.js">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-    crossorigin="anonymous">
+
     </script>
 
 </head>
@@ -35,8 +35,7 @@
         </span>
         <span class="filter" style="display:inline;">
             <!-- <button class="btn" id="btn"type="submit" ><img onclick="함수명" src="./img/filter.png" width:100px; style="display:inline-block; vertical-align:middle"></button> -->
-            <img class="filterimg" id="filter" src="./img/filter.png" style="display:inline-block; vertical-align:middle" onclick="location.href='filter.html'">
-            <img class="filterimg" id="filterOn" src="./img/filterOn.png"style="display:inline-block; vertical-align:middle">
+            <img class="filterimg" id="filter" src="./img/filter.png" style="display:inline-block; vertical-align:middle">
         </span>       
 
     </div>
@@ -46,7 +45,7 @@
 <hr>
 <main>
     <div class="main" id="main">
-        <!-- <div class="content">
+         <!-- <div class="content">
             <div>
                 <h3 class="placeName">ttt</h3>
             </div>
@@ -63,8 +62,7 @@
                <h6 class="placeDistance">440m</h6> 
             </div>
 
-        </div> -->
-        
+        </div> -->        
 
     </div>
     
@@ -75,23 +73,6 @@
 
 </body>
 
-<script>
-
-    $(document).ready(function(){
-            $("#filter").show();
-            $("#filterOn").hide();
- 
-            $("#filter").click(function(){
-                $("#filter").hide();
-                $("#filterOn").show();
-            });
- 
-            $("#filterOn").click(function(){
-                $("#filter").show();
-                $("#filterOn").hide();
-            });
-        });
-</script>
 <script src="js/content.js"></script>
  
 
