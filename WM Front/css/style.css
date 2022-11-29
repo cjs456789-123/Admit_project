@@ -123,6 +123,27 @@ hr{
     flex-wrap: wrap;
 }
 
+.mainContent{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.category{
+    color:black;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: -5px;
+}
+
+.categoryName{
+    color:black;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: -5px;
+}
+
 .listup-filter-bar{
     display:block;
     position: relative;
